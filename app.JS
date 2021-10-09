@@ -46,19 +46,6 @@ function del(_this) {
     res.value = res.value.slice(0,-1)
 }
 
-function lightTheme(class1, class2, color){
-    var btn = document.getElementsByTagName("button")
-    var body=document.getElementById("mainbody")
-    var watch = document.getElementById("stpwtch")
-    var calc = document.getElementById("main")
-    watch.className += class2
-    body.className += class1
-    calc.className += class2
-    for(var i =0; i<btn.length; i++){
-    btn[i].style.borderColor= color
-    }
-    
-}
 function scientific(_this,val){
     _this.className = "btn-custom"
     var res = document.getElementById("calc");
